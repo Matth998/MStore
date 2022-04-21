@@ -8,6 +8,7 @@ export class ProductModel{
     promotion: number;
     quantity: number;
     category: string;
+    img: string;
     user: UserModel;
     brand: BrandModel;
 

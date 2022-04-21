@@ -1,3 +1,5 @@
+import { ProductsService } from './../service/products.service';
+import { ProductModel } from './../model/ProductModel';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  productModel: ProductModel = new ProductModel();
+  listProduct: ProductModel[];
 
-  ngOnInit(): void {
+
+  constructor(
+
+    private productsService: ProductsService
+
+  ) { }
+
+  ngOnInit(){
+
+    window.scroll(0,0)
+
+    this.getAllProducts();
+
+  }
+
+  getAllProducts(){
+
+    this.productsService.getAllProducts().subscribe((resp: ProductModel[]) =>{
+
+      this.listProduct = resp;
+      
+    })
+
   }
 
 }
