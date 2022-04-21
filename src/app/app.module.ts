@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuHomeComponent } from './menu-home/menu-home.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MenuHomeComponent } from './menu-home/menu-home.component';
     MenuComponent,
     HomeComponent,
     FooterComponent,
-    MenuHomeComponent
+    MenuHomeComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
