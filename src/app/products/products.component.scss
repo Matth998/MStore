@@ -1,9 +1,3 @@
-@mixin sp-layout {
-  @media screen and (max-width: 750px) {
-    @content;
-  }
-}
-
 @keyframes changeBackgroundColor {
   0% {
     background-position: 0% 50%;
