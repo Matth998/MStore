@@ -1,0 +1,26 @@
+<div class="form-bg">
+    <div class="container-fluid mt-5 mb-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8">
+                <div class="form-container">
+                    <div class="form-icon">
+                        <i class="fa fa-user-circle"></i>
+                        <span class="signup"><a routerLink="/register">Don't have account? Signup</a></span>
+                    </div>
+                    <form class="form-horizontal">
+                        <h3 class="title">Member Login</h3>
+                        <div class="form-group">
+                            <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                            <input [(ngModel)]="userLogin.email" name="email" class="form-control" type="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <span class="input-icon"><i class="fa fa-lock"></i></span>
+                            <input [(ngModel)]="userLogin.password" name="password" class="form-control" type="password" placeholder="Password">
+                        </div>
+                        <button class="btn signin" (click)="Login()">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

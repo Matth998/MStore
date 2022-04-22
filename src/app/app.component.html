@@ -1,3 +1,4 @@
-<app-menu-home></app-menu-home>
+<app-menu-home *ngIf="authService.LoggedOut()"></app-menu-home>
+<app-menu *ngIf="authService.Logged()"></app-menu>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

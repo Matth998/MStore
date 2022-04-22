@@ -9,6 +9,11 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuHomeComponent } from './menu-home/menu-home.component';
 import { ProductsComponent } from './products/products.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { FormsModule } from '@angular/forms';
+import { OrderModule } from 'ngx-order-pipe';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -17,12 +22,17 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     FooterComponent,
     MenuHomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ModalModule.forRoot(),
+    OrderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
