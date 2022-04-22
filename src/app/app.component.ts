@@ -1,3 +1,4 @@
+import { AuthService } from './service/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MStore';
+
+  constructor(
+
+    public authService: AuthService
+
+  ){}
+
 }
